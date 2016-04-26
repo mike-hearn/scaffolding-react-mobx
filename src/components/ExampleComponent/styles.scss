@@ -1,0 +1,42 @@
+@import "../../shared/styles/variables";
+@import "../../../node_modules/bootstrap/scss/variables";
+
+
+.exampleContainer {
+    margin-top: 1rem;
+    border: 1px solid rgba(0,0,0,0.2);
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.secondaryContainer {
+    background-color: red;
+}
+
+.header {
+    font-size: 2.5em;
+    margin: 0.5em initial;
+    font-weight: 900;
+}
+
+.input {
+    padding: 0.5em;
+    flex: 1 1 auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.individualLine {
+    height: 6rem;
+    display: flex;
+    align-items: center;
+
+    p {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.enterTextField, .yourMessage, .yourSlug {
+    composes: individualLine;
+}
